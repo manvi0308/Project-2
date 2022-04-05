@@ -1,0 +1,326 @@
+When we make a request and expect a response, we can add the await syntax in front of the function to wait until the promise settles with the result. But, to use this syntax, we must call it inside the async function in typical JavaScript code.
+
+
+
+ <div className="events-cards-list">
+          {/*DISPLAY ALL THE EVENT UNIT CARDS MATCHING TO THE REQUIREMENTS     <GetEventCardData />*/}
+          <div className="eventUnitCard">
+            <img src={imageURL} alt="" id="eventUnitCard__Image" />
+            <h2>{eventCaption}</h2>
+            <div className="eventUnitCardDetails">
+              <ol className="itemLabel">
+                <li>
+                  <b>Starts On</b>
+                </li>
+                <li>
+                  <b>Entry Fee</b>
+                </li>
+                <li>
+                  <b>Venue</b>
+                </li>
+              </ol>
+              <ol className="itemValue">
+                <li>{startTime}</li>
+                <li>{entryFee}</li>
+                <li>{venue}</li>
+              </ol>
+
+              <p id="shortDescription">
+                Lorem ipsum cta commodi maiores ducimus rerum saepe qui
+                dignissimos molestiae animi? Accusantium, cumque?
+              </p>
+            </div>
+            <button>REGISTER NOW</button>
+          </div>
+        </div>
+
+ {
+   /* const imageURL = eventData.events.cover_picture;
+    const eventCaption = eventData.events.name;
+    const startTime = eventData.events.event_start_time;
+    const entryFee = eventData.events.fees;
+    const eventDescription = eventData.events.short_desc;
+    const venue = eventData.events.venue;*/
+  }
+{
+    "data": {
+        "events": [
+            {
+                "id": 917,
+                "name": "Introduction to DSA and ALGO and Roadmaps to competitive Programming | Karunya Institute of Technology and Sciences",
+                "short_desc": "Give your career a head-start and know how you can get closer to your dream job by refining your coding skills.",
+                "cover_picture": "https://files.codingninjas.in/intro-to-ds-and-algo-karunya-institute-desktop-version-10931.jpg",
+                "registration_start_time": 1623160440,
+                "registration_end_time": 1623414600,
+                "event_start_time": 1623414600,
+                "event_end_time": 1623418200,
+                "venue": "Online",
+                "fees": 0,
+                "currency": "INR",
+                "registration_status": "REGISTRATIONS_OPEN",
+                "user_already_registered": null,
+                "start_time": 1623160440,
+                "end_time": 1623414600,
+                "registered_users": {
+                    "top_users": [
+                        {
+                            "name": "Anuj Soni",
+                            "image_url": "https://lh3.googleusercontent.com/a-/AOh14GhA3jb72-5WQGoA8s6sNnewxs5bT2-l8mxRNqlyOA=s96-c"
+                        },
+                        {
+                            "name": "Chandra Pratap",
+                            "image_url": null
+                        },
+                        {
+                            "name": "20DCS038 ANJALI KHATIK",
+                            "image_url": "https://lh4.googleusercontent.com/-4sjf8wApAQ4/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucnSIEizDOnsHy-YXZZIlhMEe9uK2A/s96-c/photo.jpg"
+                        },
+                        {
+                            "name": "DEVAGIRI MOUNIKA URK19CS1176",
+                            "image_url": "https://lh4.googleusercontent.com/-SxuzKnbnWPw/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucmhXAda8BmCcxoZ1EdaU8XWXqeREg/s96-c/photo.jpg"
+                        },
+                        {
+                            "name": " SHARON NATASHA FRANCIS",
+                            "image_url": "https://lh3.googleusercontent.com/a/AATXAJzD2gNHKGmuWIIvbvHMFTV7eUyClfoJRy5CKBli=s96-c"
+                        }
+                    ],
+                    "other_users_count": 50,
+                    "show_users_count": true
+                },
+                "seats_left": 9945,
+                "seats_filled": 55,
+                "slug": "introduction-to-dsa-and-algo-and-roadmaps-to-competitive-programming-karunya-institute-of-technology-and-sciences",
+                "orderable_key": "EV-917",
+                "has_started": false,
+                "highlight_event": false,
+                "card_tags": [
+                    "Campus Event",
+                    "Coding Concepts"
+                ],
+                "mobile_cover_picture": "https://files.codingninjas.in/intro-to-ds-and-algo-karunya-institute-mobile-version-10930.jpg",
+                "is_college_specific": true,
+                "event_category": "WEBINAR",
+                "event_sub_category": "Upcoming"
+            },
+            {
+                "id": 913,
+                "name": "Roadmap To Internship Preparation | Kalinga Institute Of Technology",
+                "short_desc": "Give your career a head-start and know how you can get closer to your dream job by refining your coding skills.",
+                "cover_picture": "https://files.codingninjas.in/road-map-for-internship-preperation-desktop-version-10882.jpg",
+                "registration_start_time": 1623156660,
+                "registration_end_time": 1623501000,
+                "event_start_time": 1623501000,
+                "event_end_time": 1623504600,
+                "venue": "Online",
+                "fees": 0,
+                "currency": "INR",
+                "registration_status": "REGISTRATIONS_OPEN",
+                "user_already_registered": null,
+                "start_time": 1623156660,
+                "end_time": 1623501000,
+                "registered_users": {
+                    "top_users": [
+                        {
+                            "name": "Shubham Dharpude",
+                            "image_url": "https://lh3.googleusercontent.com/a-/AOh14GhmktWUHcGGyfPY49Njd62KVcXA86TGDDAljxyMXg=s96-c"
+                        },
+                        {
+                            "name": "OM JEE",
+                            "image_url": "https://lh5.googleusercontent.com/-6Ss4zNcTvD4/AAAAAAAAAAI/AAAAAAAAAAA/AMZuuclQ0yWI1uGhN3MrlMjFXREGHoKbvA/s96-c/photo.jpg"
+                        },
+                        {
+                            "name": "SHASHWAT SINGH BHADORIYA",
+                            "image_url": "https://lh3.googleusercontent.com/a-/AOh14GjQSV_v8nZRizuTJEvtFazeNI6rwmH7sSLQNyTH=s96-c"
+                        },
+                        {
+                            "name": "Sravya Sri",
+                            "image_url": "https://lh3.googleusercontent.com/a-/AOh14Ghsbu7zAIDNnRkkQ6C4LwxvEX2l-9RBeLGKp31rkQ=s96-c"
+                        },
+                        {
+                            "name": "Chandra Pratap",
+                            "image_url": null
+                        }
+                    ],
+                    "other_users_count": 28,
+                    "show_users_count": true
+                },
+                "seats_left": 9967,
+                "seats_filled": 33,
+                "slug": "roadmap-to-internship-preparation-kalinga-institute-of-technology",
+                "orderable_key": "EV-913",
+                "has_started": false,
+                "highlight_event": false,
+                "card_tags": [
+                    "Placement",
+                    "Campus Event",
+                    "Career Guidance",
+                    "Interview Preparation"
+                ],
+                "mobile_cover_picture": "https://files.codingninjas.in/road-map-for-internship-and-preperation-mobile-version-10881.jpg",
+                "is_college_specific": true,
+                "event_category": "WEBINAR",
+                "event_sub_category": "Upcoming"
+            },
+            {
+                "id": 918,
+                "name": "Roadmap to Programming And Ds & Algorithm | Vellore Institute of Technology",
+                "short_desc": "Give your career a head-start and know how you can get closer to your dream job by refining your coding skills.",
+                "cover_picture": "https://files.codingninjas.in/desktop-48-10936.jpg",
+                "registration_start_time": 1623160800,
+                "registration_end_time": 1623504600,
+                "event_start_time": 1623504600,
+                "event_end_time": 1623508200,
+                "venue": "Online",
+                "fees": 0,
+                "currency": "INR",
+                "registration_status": "REGISTRATIONS_OPEN",
+                "user_already_registered": null,
+                "start_time": 1623160800,
+                "end_time": 1623504600,
+                "registered_users": {
+                    "top_users": [
+                        {
+                            "name": "MANVI AGGARWAL",
+                            "image_url": null
+                        },
+                        {
+                            "name": "Pentamsetty Sai Harshita",
+                            "image_url": null
+                        },
+                        {
+                            "name": "Kunal Singh",
+                            "image_url": null
+                        },
+                        {
+                            "name": "Varun Kumar",
+                            "image_url": "https://lh3.googleusercontent.com/a/AATXAJySOtOD2k4ANfWScdkcioHW29h3LF36wmnU69-X=s96-c"
+                        },
+                        {
+                            "name": "Nikita",
+                            "image_url": "https://lh3.googleusercontent.com/a-/AOh14Gi9_3llpYqR1y91eXQj48rYKhdvljhuFsWEBqxjdA=s96-c"
+                        }
+                    ],
+                    "other_users_count": 30,
+                    "show_users_count": true
+                },
+                "seats_left": 9965,
+                "seats_filled": 35,
+                "slug": "roadmap-to-programming-and-ds-algorithm-vellore-institute-of-technology",
+                "orderable_key": "EV-918",
+                "has_started": false,
+                "highlight_event": false,
+                "card_tags": [
+                    "Campus Event",
+                    "Coding Concepts"
+                ],
+                "mobile_cover_picture": "https://files.codingninjas.in/mobile-51-10937.jpg",
+                "is_college_specific": true,
+                "event_category": "WEBINAR",
+                "event_sub_category": "Upcoming"
+            },
+            {
+                "id": 914,
+                "name": "Roadmap To Placement Preparation | Kalinga Institute Of Technology",
+                "short_desc": "Give your career a head-start and know how you can get closer to your dream job by refining your coding skills.",
+                "cover_picture": "https://files.codingninjas.in/1600x370-19-10995.png",
+                "registration_start_time": 1623156720,
+                "registration_end_time": 1623587400,
+                "event_start_time": 1623587400,
+                "event_end_time": 1623591000,
+                "venue": "Online",
+                "fees": 0,
+                "currency": "INR",
+                "registration_status": "REGISTRATIONS_OPEN",
+                "user_already_registered": null,
+                "start_time": 1623156720,
+                "end_time": 1623587400,
+                "registered_users": {
+                    "top_users": [],
+                    "other_users_count": 4,
+                    "show_users_count": false
+                },
+                "seats_left": 9996,
+                "seats_filled": 4,
+                "slug": "roadmap-to-placement-preparation-kalinga-institute-of-technology",
+                "orderable_key": "EV-914",
+                "has_started": false,
+                "highlight_event": false,
+                "card_tags": [
+                    "Placement",
+                    "Campus Event",
+                    "Career Guidance",
+                    "Interview Preparation"
+                ],
+                "mobile_cover_picture": "https://files.codingninjas.in/430x160-21-10994.png",
+                "is_college_specific": true,
+                "event_category": "WEBINAR",
+                "event_sub_category": "Upcoming"
+            },
+            {
+                "id": 916,
+                "name": "Roadmap to Crack Internships & Placements | Indraprastha Engineering College, Ghaziabad",
+                "short_desc": "Give your career a head-start and know how you can get closer to your dream job by refining your coding skills. ",
+                "cover_picture": "https://files.codingninjas.in/roadmap-for-cracking-interenship-and-placement-desktop-10940.jpg",
+                "registration_start_time": 1623160020,
+                "registration_end_time": 1623587400,
+                "event_start_time": 1623587400,
+                "event_end_time": 1623591000,
+                "venue": "Online",
+                "fees": 0,
+                "currency": "INR",
+                "registration_status": "REGISTRATIONS_OPEN",
+                "user_already_registered": null,
+                "start_time": 1623160020,
+                "end_time": 1623587400,
+                "registered_users": {
+                    "top_users": [
+                        {
+                            "name": "Kanishk Singh",
+                            "image_url": null
+                        },
+                        {
+                            "name": "Gagan Deep",
+                            "image_url": "https://lh3.googleusercontent.com/a/AATXAJwaYjOmQvIsXl-nyT1K4QxaFKR-yRgUjxA22-IG=s96-c"
+                        },
+                        {
+                            "name": "Sravya Sri",
+                            "image_url": "https://lh3.googleusercontent.com/a-/AOh14Ghsbu7zAIDNnRkkQ6C4LwxvEX2l-9RBeLGKp31rkQ=s96-c"
+                        },
+                        {
+                            "name": "Saksham",
+                            "image_url": "https://lh3.googleusercontent.com/a-/AOh14GhECnLsD5Mtyd7RjtMZZJA8fsxJJhkRfIHiH_sCBg=s96-c"
+                        },
+                        {
+                            "name": "PRANSHU SINGH",
+                            "image_url": "https://lh3.googleusercontent.com/a-/AOh14Gih5koRhinBhaAdoJRZssgdV-9O1tkNVlzW2qll=s96-c"
+                        }
+                    ],
+                    "other_users_count": 69,
+                    "show_users_count": true
+                },
+                "seats_left": 9926,
+                "seats_filled": 74,
+                "slug": "roadmap-to-crack-internships-placements-indraprastha-engineering-college-ghaziabad",
+                "orderable_key": "EV-916",
+                "has_started": false,
+                "highlight_event": false,
+                "card_tags": [
+                    "Online Coding Event",
+                    "Career Guidance",
+                    "Interview Preparation"
+                ],
+                "mobile_cover_picture": "https://files.codingninjas.in/roadmap-for-cracking-interenship-and-placement-mobile-10941.jpg",
+                "is_college_specific": true,
+                "event_category": "WEBINAR",
+                "event_sub_category": "Upcoming"
+            }
+        ],
+        "page_count": 1
+    },
+    "message": "Events List",
+    "status": 200,
+    "error": null,
+    "disabled": false,
+    "update": false,
+    "external_rating": null
+}

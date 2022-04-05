@@ -1,0 +1,164 @@
+/*Import mulish font*/
+@import url("https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800,900");
+.footer {
+  /* border: 1px solid red;*/
+  background-color: white;
+  font-family: "Mulish", sans-serif;
+  color: black;
+}
+
+.footer__container {
+  padding: 4% 5%;
+
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__container a {
+  font-size: 12px;
+}
+
+.beginners {
+  /*  border: 1px solid rgb(38, 145, 136);*/
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  margin: 0.4% 0%;
+}
+.beginners a {
+  margin-top: 3px;
+  background-color: white;
+  padding: 0px 5px;
+  text-decoration: none;
+  color: #424242;
+}
+.beginners a b {
+  background-color: white;
+  color: #0c0101;
+}
+
+.advanced {
+  /*  border: 1px solid rgb(38, 145, 136);*/
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  margin: 0.4% 0%;
+}
+.advanced a {
+  background-color: white;
+  padding: 1px 5px;
+  text-decoration: none;
+  color: #424242;
+}
+
+.advanced a b {
+  background-color: white;
+  padding: 1px 5px;
+  text-decoration: none;
+  color: #0c0101;
+
+}
+
+.freeTrial {
+  /* border: 1px solid rgb(38, 145, 136);*/
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  margin: 0.4% 0%;
+}
+.freeTrial a {
+  background-color: white;
+  padding: 1px 5px;
+  text-decoration: none;
+  color: #424242;
+}
+.freeTrial a b {
+  background-color: white;
+  padding: 1px 5px;
+  text-decoration: none;
+  color: #0c0101;
+}
+
+.freeContents {
+  /* border: 1px solid rgb(38, 145, 136);*/
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  margin: 0.4% 0%;
+}
+.freeContents a {
+  background-color: white;
+  padding: 1px 5px;
+  text-decoration: none;
+  color: #424242;
+}
+.freeContents a b {
+  background-color: white;
+  padding: 1px 5px;
+  text-decoration: none;
+  color: #0c0101;
+}
+
+.payments {
+ /* border: 1px solid rgb(38, 145, 136);*/
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background-color: white;
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+
+.paymentsLeft {
+ /* border: 1px solid red;*/
+  display: flex;
+  background-color: white;
+  justify-content: space-between;
+}
+
+.paymentsLeft p {
+  background-color: white;
+  color: black;
+}
+
+.paymentsLeft img {
+  background-color: transparent;
+  height: 24px;
+  padding: 2px 8px;
+}
+
+.paymentsRight {
+  display: flex;
+  background-color: white;
+  justify-content: space-evenly;
+}
+.paymentsRight img {
+  background-color: transparent;
+  height: 24px;
+  padding: 2px 8px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .footer__container {
+    padding: 4% 2%;
+  }
+  .beginners {
+    flex-direction: column;
+  }
+  .advanced {
+    flex-direction: column;
+  }
+  .freeTrial {
+    flex-direction: column;
+  }
+  .freeContents {
+    flex-direction: column;
+  }
+  .payments {
+    flex-direction: column;
+  }
+  
+}
+  

@@ -1,0 +1,26 @@
+.topNavbar {
+  width: 100%;
+  background-color: rgb(3, 45, 107);
+  height: 100px;
+}
+
+.topNavbar__contents {
+  border: 1px solid red;
+
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.topNavbar__logo img {
+  width: 100px;
+  height: 100px;
+}
+
+.topNavbar__list ol {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}

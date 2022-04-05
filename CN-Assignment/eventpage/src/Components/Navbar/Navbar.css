@@ -1,0 +1,82 @@
+*{
+  color: white;
+  background-color: #032d6b;
+}
+.Navbar {
+  width: 80%;
+  margin: 0 auto;
+  align-items: center;
+  display: flex;
+  background-color: rgb(3, 45, 107);
+}
+
+.topNavbar {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.logo {
+  background: transparent;
+  border-radius: 20px;
+  margin-left: 80px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #d2d2d6;
+}
+
+.inside-links {
+  padding: 14px;
+  color: black;
+  background-color: white;
+}
+.inside-list-items:hover {
+  border-left: 6px solid orangered;
+}
+
+.outside-list-items {
+  padding: 0px 24px;
+  margin: 4px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #d2d2d6;
+}
+
+@media screen and (max-width: 992px) {
+  .Navbar {
+    /* border: 1px solid black;*/
+    /* background-color: #2f154c;*/
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.enrolButton {
+  background-color: rgb(253, 130, 15);
+  padding: 8px 24px;
+  border: 0px;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 24px;
+  border-radius: 6px;
+  font-family: Mulish, Arial, Helvetica, sans-serif;
+  font-size: 13px;
+}
+.loginButton{
+  margin-right: 10px;
+  background-color: #feeee5;
+  color: rgb(253, 130, 15);
+  padding: 8px 24px;
+  border: 0px;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 24px;
+  border-radius: 6px;
+  font-family: Mulish, Arial, Helvetica, sans-serif;
+  font-size: 13px;
+}
