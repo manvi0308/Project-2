@@ -242,6 +242,41 @@ function EventPosts() {
             </div>
             <button>REGISTER NOW</button>
           </div>
+
+          <div className="eventUnitCard">
+            <img
+              src="https://files.codingninjas.in/road-map-for-internship-preperation-desktop-version-10882.jpg"
+              alt=""
+              id="eventUnitCard__Image"
+            />
+            <h2>eventCaption</h2>
+            <div className="eventUnitCardDetails">
+              <ol className="itemLabel">
+                <li>
+                  <b>Starts On</b>
+                </li>
+                <li>
+                  <b>Entry Fee</b>
+                </li>
+                <li>
+                  <b>Venue</b>
+                </li>
+              </ol>
+              <ol className="itemValue">
+                <li>startTime</li>
+                <li>entryFee</li>
+                <li>venue</li>
+              </ol>
+
+              <p id="shortDescription">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa
+                ut odio, distinctio ratione optio nesciunt officiis animi itaque
+                natus expedita nisi, et dicta. Ipsam fugit, reprehenderit sed
+                nam asperiores voluptate.
+              </p>
+            </div>
+            <button>REGISTER NOW</button>
+          </div>
         </div>
 
         {/*Event Tags list*/}
