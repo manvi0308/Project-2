@@ -1,0 +1,73 @@
+.App {
+  background-color: black;
+}
+
+.mainContainer {
+  width: 100vw;
+  height: 45vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainContainer__IntroHeading {
+  font-size: 65px;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+}
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+.mainContainer__display h1 {
+  font-size: 85px;
+  color: white;
+}
+.mainContainer__buttons {
+  width: 60%;
+  /*  border: 3px solid red;*/
+  display: flex;
+  justify-content: space-evenly;
+  padding: 15px 6px;
+}
+.mainContainer__buttons button {
+  border-radius: 24px;
+  padding: 10px 15px;
+  font-size: 24px;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+}
+.madeWithSection {
+  border-top: 1px solid white;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.madeWithSection p {
+  font-size: 26px;
+}
+
+.madeWithSection p {
+}

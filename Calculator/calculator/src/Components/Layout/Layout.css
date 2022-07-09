@@ -1,0 +1,54 @@
+.layout {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.layout__Input {
+  border: 1px solid green;
+  width: 50%;
+}
+
+.layout__Input input {
+  width: 96%;
+  border-style: none;
+  padding: 10px 2%;
+}
+.layout__Buttons {
+  width: 50%;
+  border: 1px solid purple;
+}
+.level1 {
+  width: 100%;
+}
+
+.level1 button {
+  width: 25%;
+  padding: 12px 0px;
+}
+.level2{
+  width: 100%;
+}
+.level2 button {
+  width: 25%;
+  padding: 8px 0px;
+}
+.level3 {
+  width: 100%;
+}
+
+.level3 button {
+  width: 25%;
+  padding: 8px 0px;
+}
+
+.level4{
+  width: 100%;
+}
+
+.level4 button {
+  width: 25%;
+  padding: 8px 0px;
+}

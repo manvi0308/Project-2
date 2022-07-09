@@ -1,0 +1,16 @@
+.header {
+  /*border: 1px solid red;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+}
+
+.header__Content {
+ /* border: 1px solid green;*/
+  width: 40%;
+  
+}
+.header__Content h1 {
+  text-align: center;
+}
